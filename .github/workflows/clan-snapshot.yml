@@ -1,0 +1,12 @@
+name: Clan Snapshot
+on: [workflow_dispatch]
+permissions:
+  contents: write
+  actions: write
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nixervo/clan-snapshot-action@v1
+        with:
+          clan-id: 110
